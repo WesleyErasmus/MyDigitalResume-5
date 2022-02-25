@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body {
+    margin: 0 0 0 240px;
+    padding: 0;
+}
+header {
+    background-color: azure;
+    text-align: center;
+}
+button#contact-me-btn {
+    background-color: bisque;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+nav {
+    background-color: blanchedalmond;
+    float: left;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    top: 0;
+    width: 240px;
+    z-index: 1;
+}
+main {
+    /* background-color: blueviolet; */
+    position: relative;
+    display: block;
+    width: 100%;
+}
+h1.hello {
+    font-size: 800px;
+}
+article.about-me {
+    /* background-color: aquamarine; */
+    height: 100vh;
+    font-size: 2rem;
+    padding:14% 25%;
+    
+}
+article.job-experience {
+    /* background-color:brown; */
+    font-size: 19pt;
+    padding: 50px 17% 50px 17%;
+}
+article.coding-and-design-skills{
+    background-color:green;
+    font-size: 19pt;
+    padding: 50px 17% 50px 17%;
+}
+article.education {
+    background-color:red;
+    overflow-x: hidden;
+}
+.footer-contact-details {
+    display: inline;
+}
