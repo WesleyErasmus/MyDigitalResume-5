@@ -4,6 +4,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#ADA996, #F2F2F2, #dbdbdb, #EAEAEA);
   margin: 0 0 0 240px;
   padding: 0;
 }
@@ -11,8 +13,10 @@ header {
   text-align: center;
 }
 #headshot {
+  /* profile picture in navbar */
   width: 160px;
   border-radius: 50%;
+  border: 2px solid lightgrey;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -21,6 +25,7 @@ header {
   margin-left: 38px;
 }
 button#contact-me-btn {
+  /* floating contact button on the right of the webpage */
   position: fixed;
   float: right;
   right: 0;
@@ -28,13 +33,17 @@ button#contact-me-btn {
   transform: rotateZ(270deg);
   z-index: 1;
   color: #fff;
-  width: 140px;
+  width: 170px;
   height: 45px;
   font-size: 17pt;
   border-radius: 5px 5px 0 0;
   border: 0.1px solid lightgrey;
+  background-color:hsla(180, 4%, 37%, 0.5);
 }
 nav {
+  background-color:hsla(180, 4%, 37%, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
   float: left;
   position: fixed;
   left: 0;
@@ -46,10 +55,9 @@ nav {
   width: 240px;
   z-index: 1;
   padding-left: 0;
-  border-right: 0.1px solid lightgray;
 }
 ul.nav-btns {
-  font-size: 17pt;
+  font-size: 13pt;
 }
 ul.social-media-links {
   display: flex;
@@ -67,48 +75,35 @@ ul.social-media-links {
   color: #000;
   padding: 10px;
 }
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-  color: #000;
-}
-a:hover {
-  text-decoration: underline;
-  color: grey;
-}
-a:active {
-  text-decoration: underline;
-}
-a {
-  color: #000;
-}
+
 main {
   position: relative;
   display: block;
   width: 100%;
 }
 #hello {
-  font-size: 5rem;
   margin: 0;
+}
+h1#hello {
+  font-size: 5rem;
+  background: -webkit-linear-gradient(rgb(129, 127, 127), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 article.about-me {
   height: 100vh;
-  font-size: 2rem;
+  font-size: 1.1rem;
   padding: 17% 25%;
   border-bottom: 0.1px solid lightgrey;
 }
 article.job-experience {
-  font-size: 16pt;
+  font-size: 12pt;
   padding: 50px 20% 50px 20%;
   border-bottom: 0.1px solid lightgrey;
 }
 article.coding-and-design-skills {
-  font-size: 19pt;
+  font-size: 12pt;
   padding: 50px 20% 50px 20%;
-  text-align: center;
-  height: 100vh;
   border-bottom: 0.1px solid lightgrey;
 }
 .my-skills > div {
@@ -120,23 +115,23 @@ article.coding-and-design-skills {
   color: grey;
 }
 article.education {
-  font-size: 16pt;
+  font-size: 12pt;
   overflow-x: hidden;
   padding: 50px 20% 50px 20%;
   border-bottom: 0.1px solid lightgrey;
 }
 article.more-about-me {
   padding: 50px 20% 50px 20%;
-  font-size: 16pt;
+  font-size: 12pt;
   border-bottom: 0.1px solid lightgrey;
 }
 p.green-text {
-  color: green;
+  color: #FFA500;
 }
 footer {
   text-align: center;
   padding: 50px 20% 50px 20%;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .contact ul {
   display: flex;
@@ -147,4 +142,23 @@ footer {
 }
 .contact li {
   padding: 5px;
+}
+.education h3, h5 {
+  color: #FFA500;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: underline #FFA500 0.1px;
+}
+a:active {
+  text-decoration: underline;
+}
+a {
+  color: #000;
 }
